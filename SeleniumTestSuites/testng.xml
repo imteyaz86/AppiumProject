@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1" >
+	
+	<listeners>
+		<listener class-name="com.test.basesetup.TestNgRealTime" />
+	</listeners>
+	
+	  <test name="Test">
+		<parameter name="deviceName" value="caac467"></parameter>
+		<parameter name="udid" value="caac467"></parameter>
+		<parameter name="appiumUrl" value="http://0.0.0.0:4723/wd/hub"></parameter>
+		
+		<packages>
+		
+		<package name="com.test.apidemotestscripts.*"></package>
+		
+		</packages>
+		
+	</test>  
+	
+	<test name="Test2">
+		<parameter name="deviceName" value="4200818df0b83400"></parameter>
+		<parameter name="udid" value="4200818df0b83400"></parameter>
+		<parameter name="appiumUrl" value="http://0.0.0.0:4724/wd/hub"></parameter>
+		
+		<packages>
+		
+		<package name="com.test.apidemotestscripts.*"></package>
+		
+		</packages>
+		
+	</test> 
+</suite> <!-- Suite -->

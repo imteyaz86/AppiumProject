@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="appiumUrl" value="http://0.0.0.0:4724/wd/hub"/>
+  <parameter name="udid" value="4200818df0b83400"/>
+  <parameter name="deviceName" value="4200818df0b83400"/>
+  <listeners>
+    <listener class-name="com.test.basesetup.TestNgRealTime"/>
+  </listeners>
+  <test name="Test(failed)" parallel="tests">
+    <parameter name="appiumUrl" value="http://0.0.0.0:4723/wd/hub"/>
+    <parameter name="udid" value="caac467"/>
+    <parameter name="deviceName" value="caac467"/>
+    <classes>
+      <class name="com.test.apidemotestscripts.OpenApiDemo">
+        <methods>
+          <include name="exitSetUp"/>
+          <include name="openApiDemo" invocation-numbers="0"/>
+          <include name="pressBackTest" invocation-numbers="0"/>
+          <include name="swipeTest" invocation-numbers="0"/>
+          <include name="pressTest" invocation-numbers="0"/>
+          <include name="dragDropTest" invocation-numbers="0"/>
+          <include name="toggleClickTest" invocation-numbers="0"/>
+          <include name="openViewLink" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.apidemotestscripts.OpenApiDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="appiumUrl" value="http://0.0.0.0:4724/wd/hub"/>
+    <parameter name="udid" value="4200818df0b83400"/>
+    <parameter name="deviceName" value="4200818df0b83400"/>
+    <classes>
+      <class name="com.test.apidemotestscripts.OpenApiDemo">
+        <methods>
+          <include name="exitSetUp"/>
+          <include name="openApiDemo" invocation-numbers="0"/>
+          <include name="pressBackTest" invocation-numbers="0"/>
+          <include name="swipeTest" invocation-numbers="0"/>
+          <include name="pressTest" invocation-numbers="0"/>
+          <include name="dragDropTest" invocation-numbers="0"/>
+          <include name="toggleClickTest" invocation-numbers="0"/>
+          <include name="openViewLink" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.apidemotestscripts.OpenApiDemo -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
